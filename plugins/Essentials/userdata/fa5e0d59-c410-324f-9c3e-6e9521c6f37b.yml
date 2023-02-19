@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 45.71.37.76
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1674434855748
+  login: 1674433780546
+money: '0'
+last-account-name: Jorge1213
+logoutlocation:
+  world: 4bda2fdc-257e-429a-b135-2e8b4aa86c75
+  world-name: world
+  x: 1.900088209754383
+  y: 62.0
+  z: 2.124753007981152
+  yaw: 125.83248901367188
+  pitch: 70.65074157714844

@@ -1,0 +1,19 @@
+Title: '&8&l「 &9Warps - Categories &8&l」'
+Size: 27
+
+Content: {}
+
+Special:
+  player-warps:
+    Slots: 11
+    Type: OPEN_PLAYER_WARPS
+    Item:
+      Material: AIR
+    Priority: 5
+  
+  server-warps:
+    Slots: 15
+    Type: OPEN_SERVER_WARPS
+    Item:
+      Material: AIR
+    Priority: 5

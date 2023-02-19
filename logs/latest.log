@@ -1,0 +1,53 @@
+[17:53:22] [ServerMain/INFO]: Building unoptimized datafixer
+[17:53:24] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:53:24] [ServerMain/INFO]: Found new data pack file/BlazeandCave's Advancements Pack Amplified Nether.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/BlazeandCave's Advancements Pack Nullscape.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/BlazeandCave's Advancements Pack Terralith.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/BlazeandCave27s+Advancements+Pack+1.15.3.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/CaveBiomes-Data-Pack-1.17.1.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/DatapackUtilities-1.18.2.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/Incendium_1.19_v5.1.4.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/Nullscape_1.19.x_v1.2a.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/Structory_1.19_v1.3.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/Terralith_1.19.x_v2.3.5.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/arboria-v1-0-1.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/bvp-v5.0-datapack.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/geophilic-1.19-1.0.1.zip, loading it automatically
+[17:53:24] [ServerMain/INFO]: Found new data pack file/towns-and-towers-1-10.zip, loading it automatically
+[17:53:28] [Worker-Main-1/ERROR]: Couldn't load tag du:flammable as it is missing following references: #minecraft:carpets (from file/DatapackUtilities-1.18.2.zip)
+[17:53:28] [Worker-Main-1/ERROR]: Couldn't load tag du:non-solid as it is missing following references: #minecraft:carpets (from file/DatapackUtilities-1.18.2.zip)
+[17:53:28] [Worker-Main-1/ERROR]: Couldn't load tag du:internal/redstone/transparent as it is missing following references: #du:non-solid (from file/DatapackUtilities-1.18.2.zip)
+[17:53:33] [ServerMain/INFO]: Loaded 7 recipes
+[17:53:34] [ServerMain/WARN]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:block] are present in data pack: chunk_scan:base_marker, du:internal/redstone/transparent
+[17:53:34] [Server thread/INFO]: Starting minecraft server version 1.19.3
+[17:53:34] [Server thread/INFO]: Loading properties
+[17:53:34] [Server thread/INFO]: This server is running Purpur version git-Purpur-1916 (MC: 1.19.3) (Implementing API version 1.19.3-R0.1-SNAPSHOT) (Git: 41593ba on HEAD)
+[17:53:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:53:35] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:53:35] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[17:53:36] [Server thread/WARN]: [Pufferfish] SIMD operations are available for your server, but are not configured!
+[17:53:36] [Server thread/WARN]: [Pufferfish] To enable additional optimizations, add "--add-modules=jdk.incubator.vector" to your startup flags, BEFORE the "-jar".
+[17:53:36] [Server thread/WARN]: [Pufferfish] If you have already added this flag, then SIMD operations are not supported on your JVM or CPU.
+[17:53:36] [Server thread/WARN]: [Pufferfish] Debug: Java: 17.0.6, test run: true
+[17:53:36] [Server thread/INFO]: Default game type: SURVIVAL
+[17:53:36] [Server thread/INFO]: Generating keypair
+[17:53:36] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:53:36] [Server thread/INFO]: Using epoll channel type
+[17:53:36] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[17:53:36] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[17:53:37] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
+[17:53:37] [Server thread/WARN]: The exception was: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+[17:53:37] [Server thread/WARN]: Perhaps a server is already running on that port?
+[17:53:37] [Server thread/ERROR]: Encountered an unexpected exception
+java.lang.IllegalStateException: Failed to initialize server
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1118) ~[purpur-1.19.3.jar:git-Purpur-1916]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:321) ~[purpur-1.19.3.jar:git-Purpur-1916]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[17:53:37] [Server thread/ERROR]: This crash report has been saved to: /workspaces/codespaces-blank/./crash-reports/crash-2023-02-19_17.53.37-server.txt
+[17:53:37] [Server thread/INFO]: Stopping server
+[17:53:37] [Server thread/INFO]: Saving players
+[17:53:37] [Server thread/INFO]: Saving worlds
+[17:53:37] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:53:37] [Server thread/INFO]: Flushing Chunk IO
+[17:53:37] [Server thread/INFO]: Closing Thread Pool
+[17:53:37] [Server thread/INFO]: Closing Server

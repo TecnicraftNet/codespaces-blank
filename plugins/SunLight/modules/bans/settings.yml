@@ -1,0 +1,76 @@
+Database:
+  # Defines how often (in minutes) user data of online players will be saved to the database.
+  # Set -1 to disable.
+  Auto_Save_Interval: -1
+  Enable_Local_Cache: true
+  # Defines how often (in seconds) plugin data will be fetched and loaded from the remote database.
+  Sync_Interval: -1
+  # Sets database type.
+  # Available values: MYSQL,SQLITE
+  Type: SQLITE
+  MySQL:
+    Username: root
+    Password: root
+    Host: localhost
+    Database: minecraft
+  SQLite:
+    # File name for the database file.
+    # Actually it's a path to the file, so you can use directories here.
+    FileName: bans.db
+  Purge:
+    # Enables/Disables purge feature.
+    # Purge will remove all records from the plugin tables that are 'old' enough.
+    Enabled: false
+    # Sets maximal 'age' for the database records before they will be purged.
+    # This option may have different behavior depends on the plugin.
+    # By default it's days of inactivity for the plugin users.
+    For_Period: 60
+  # Table prefix to use when plugin create tables. Do not leave this empty.
+  Table_Prefix: ''
+
+Reasons:
+  default:
+    Message: Violation of the rules
+  advertisement:
+    Message: Advertising other servers/websites
+  grief:
+    Message: Griefing
+  toxic:
+    Message: Toxic behavior
+
+Mute:
+  Blocked_Commands:
+  - tell
+  - me
+  - broadcast
+
+Warn:
+  Max_Amount_Before_Reset: 5
+  Actions_By_Amount:
+    '3':
+      default:
+        Target_Selectors:
+        - '[EXECUTOR] ~name: player;'
+        Conditions: {}
+        Action_Executors:
+        - '[COMMAND_CONSOLE] ~message: mute %target% 15min; ~target: player;'
+    '5':
+      default:
+        Target_Selectors:
+        - '[EXECUTOR] ~name: player;'
+        Conditions: {}
+        Action_Executors:
+        - '[COMMAND_CONSOLE] ~message: kick %target%; ~target: player;'
+
+Immunity:
+- admin_name
+- 0.0.0.0
+
+Time_Aliases:
+  SECONDS: s
+  MINUTES: m
+  HOURS: h
+  DAYS: d
+  WEEKS: w
+  MONTHS: mon
+  YEARS: y

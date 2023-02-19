@@ -1,0 +1,24 @@
+###############################################################################
+#                             -<( BasicQueue )>-                              #
+#                               Made by muriplz                               #
+#                                                                             #
+###############################################################################
+#                                                                             #
+# Github - https://github.com/muriplz/BasicQueue                              #
+# Spigot - https://www.spigotmc.org/resources/basicqueue.101072/              #
+###############################################################################
+
+# Available placeholders:
+# %QUEUEPOS% - Position in queue
+# %QUEUESIZE% - Size of queue
+# %QUEUECOOLDOWN% - Cooldown in minutes
+# %ESTIMATION% - Estimated wait time in minutes
+
+# Queue kick Messages
+default: |-
+  You are inside the queue, and your position is: &a%QUEUEPOS%&f out of %QUEUESIZE%.
+  Reconnect within %COOLDOWNMINUTES% minutes to keep your position
+added: |-
+  You have been added to the queue, and your position is: &a%QUEUEPOS%&f out of %QUEUESIZE%.
+  Reconnect within %COOLDOWNMINUTES% minutes to keep your position
+estimation: 'Estimated waiting time: %ESTIMATION%&f minutes'

@@ -1,0 +1,74 @@
+Command:
+  Login:
+    Usage: <password>
+    Desc: Login into the server.
+  Register:
+    Usage: <password>
+    Desc: Register on the server.
+  Changepassword:
+    Usage: <old password> <new password>
+    Desc: Change your current password
+  Admin:
+    Changepassword:
+      Usage: <user> <new password>
+      Desc: Change user's current password.
+      Done: '&a%player%&7''s password changed.'
+    Unregister:
+      Usage: <user>
+      Desc: Unregister specified player.
+      Done: '&a%player%&7 unregistered.'
+      Kick: '&eYour account has been unregistered.'
+Login:
+  Error:
+    Name:
+      Short: '&eYour nickname is too short! It must contains at least &c%min% &echaracters!'
+      Long: '&eYour nickname is too long! It must be no longer than &c%max% &echaracters!'
+      InvalidChars: '&eYour nickname contains invalid characters! It must follow the pattern: &c%regex%'
+      InvalidCase: '&eYour nickname is in wrong case! It must be: &c%name%'
+    BadCountry: '&eYour country is banned on this server!'
+    AlreadyLogged: '&ePlayer with such name is already logged on.'
+    InvalidPassword: 'Invalid password! Attempts left: &c%attempts%'
+  Notify:
+    Logged: Successful login!
+    NotLogged: Type &e/login <password> &7to login...
+Register:
+  Notify:
+    NotRegistered: Type &e/register <password> &7to register...
+    Registered: 'Successful registered! Your password is: {json: ~hint:&7Password: &a%password%;}&d[Hover Cursor]{end-json}'
+  Error:
+    Password:
+      Short: '&eYour password is too short! It must contains at least &c%min% &echaracters!'
+      Long: '&eYour password is too long! It must be no longer than &c%max% &echaracters!'
+      InvalidChars: '&eYour password contains invalid characters! It must contains only latin letters and/or numbers.'
+      Denied: '&eYour password is unsafe! Please, select other password.'
+    TooManyIps: You have reached the register limit for this IP.
+Changepassword:
+  Error:
+    WrongOld: Old password is incorrect!
+  Notify:
+    Changed: You changed your password!
+Kick:
+  MaxAttempts: '&cYou have reached the limit of login attempts.'
+  Timeout: '&cLogin timeout!'
+  Reload: '&eAuth system is reloading!'
+Titles:
+  Login:
+    Notify:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&e&lPlease Log-In'
+    - '&7Type your password in &echat&7.'
+    Success:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&lSuccess!'
+    - '&7You''re logged in.'
+    Failure:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&lIncorrect Password!'
+    - '&7Attempts left: &c&n%attempts%'
+  Register:
+    Notify:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&lPlease Register'
+    - '&7Type your password in &cchat&7.'
+    Success:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&lSuccess!'
+    - '&7You''re registered now.'
+    Failure:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&lInvalid Password!'
+    - '&7Please choose other password.'

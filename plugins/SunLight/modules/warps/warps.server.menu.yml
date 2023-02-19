@@ -1,0 +1,58 @@
+Title: '&8&l「 &9Warps - Server &8&l」'
+Size: 54
+
+Default-Sorting: WARP_ID
+
+Warp:
+  Name: '&eWarp: &6%warp_name% &7(&f%warp_id%&7)'
+  Lore:
+  - '&eOwner: &6%warp_owner_name%'
+  - '&eTeleport Cost ($): &6%warp_teleport_cost_money%'
+  - '&eAccess: &6%warp_user_access%'
+  - '&7'
+  - '&bRating: &f%warp_rating%%'
+  - '&bVisits: &f%warp_visits%'
+  - '&7'
+  - '%warp_description%'
+  - '&7'
+  - '&6Left Click &eto teleport'
+  - '&6Right Click &eto edit &c[Admin]'
+  Slots: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44
+
+Content:
+  filler_1:
+    Slots: 45,46,47,52,53
+    Item:
+      Material: AIR
+  filler_2:
+    Slots: 48,50
+    Item:
+      Material: AIR
+  
+  return:
+    Slots: 49
+    Type: RETURN
+    Item:
+      Material: AIR
+    Priority: 5
+  
+  page_next:
+    Slots: 53
+    Type: PAGE_NEXT
+    Item:
+      Material: AIR
+    Priority: 5
+  page_previous:
+    Slots: 45
+    Type: PAGE_PREVIOUS
+    Item:
+      Material: AIR
+    Priority: 5
+
+Special:
+  sort:
+    Slots: 51
+    Type: WARP_SORTING
+    Item:
+      Material: AIR
+    Priority: 5

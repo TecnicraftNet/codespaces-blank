@@ -1,0 +1,165 @@
+# This plugin is made by Hexle!
+# -- >> Hexle_Developing_Systems << --
+# BugReport and Help: https://dc.hexle.at
+# You can use colorcodes, in lower versions you have to write instead of §9 \u00A79
+# https://minecraft.fandom.com/wiki/Formatting_codes
+# ------------------------------------------------------------------------------------------------------------------
+# |CONFIG - DESCRIPTION - DOCUMENTATION:
+# |
+# | version:
+# |   |-> DO NOT EDIT! - The plugin checks if the config is up to date!
+# |
+# | noperm: "§4You don't have permission!"
+# |   |-> The message, which will be sent if the player does not have enough permissions
+# |
+# | prefix: "§9[§aItemEffects§9] "
+# |   |-> The prefix of the plugin
+# |
+# | lang: de,en,fr,ru,tr
+# |   |-> The language of the plugin:
+# |   |-> de=German,en=English,fr=French,ru=Russian,tr=Turkish
+# |
+# | roman-numerals: true/false
+# |   |-> If the plugin should use roman numerals (I-XV) for displaying the amplifier in the lore
+# |
+# | updater: true/false
+# |   |-> If the plugin should check for updates.
+# |
+# | main-hand,off-hand,armor: true/false
+# |   |-> Enable/disable the plugin for different slots: Keep in mind, that the off-hand was added in version 1.9!!
+# |
+# | resethealthonchest: true/false
+# |   |-> Set the extra hearts to normal health when opening a chest (Requested by the community)
+# |
+# | enable-hidden-effects: true/false
+# |   |-> Disable this if you do not need hidden effects.
+# |
+# | enable-mobs: true/false
+# |   |-> If the effects should be applied onto mobs (PickUp/Drop-Event) 1.12+
+# |
+# | itemeffecter-item: true/false
+# |   |-> Enables the feature to "craft" item with a potion in a GUI, like an anvil, where you can
+# |       add an enchantment book onto an item.
+# |
+# | itemeffecter-settings: hide/show/choose
+# |   |-> If the itemeffecter is disabled, this won't have any effect at all!
+# |       - hide: All effects added with the itemeffecter are hidden - !!! ENSURE THAT HIDDEN EFFECTS ARE ENABLED
+# |       - show: All effects added with the itemeffecter are visible (in the itemlore)
+# |       - choose: The player can choose if the effect is visible or hidden
+# |
+# | itemeffecter-armor: true/false
+# |   |-> Enables the feature to "craft" armor with a potion in a GUI
+# |
+# | updateEffectsOnCommand: true/false
+# |   |-> If the plugin should check the effects when a command is executed
+# |   |-> True: REMOVES effects, which are NOT added by the plugin, while HOLDING an item in your MAIN HAND and executing a command
+# |   |-> False: Does not remove custom effects, which are not added by the plugin, the player MIGHT get effects which he should not have
+# |
+# | infinityOnlyOnActiveSlots: true/false
+# |   |-> If the soulbound effect is active when you have the item on an active slot (offhand, mainhand, armorslots) or in the whole inventory
+# |   |-> True: only in offhand, mainhand, armorslots
+# |   |-> False: in every slot from your inventory
+# |
+# | saveEntitySpawn: true/false
+# |   |-> If the plugin should spawn the entity when there is air on top of the block
+# |
+# | snowEffectOnBootsOnly: true/false
+# |   |-> If the plugin should check the boots only when creating a snow path behind the player
+# |
+# | removeSnowAfterSeconds: 15 (seconds)
+# |   |-> How long the snow should stay on the ground; 0 or -1 to disable the despawn of the snow
+# |
+# | spawnSnowGolemOnDeathOnChristmas: true/false
+# |   |-> If snow golems should be spawned on the 23/24/25 of December when a player dies
+# |
+# | spawnSnowGolemOnDeathOnChristmas: true/false
+# |   |-> If snow golems should be spawned on the 23/24/25 of December when a player dies
+# |
+# | translations:
+# |   |-> DO NOT CHANGE THE ORDER OF THE LANGUAGE!!! --> "en", "de", "fr", "ru", "tr"
+# |   |-> You CAN change the TRANSLATION ITSELF, but not the order!
+# |
+# | commands: (!!! WATCH OUT FOR YML FORMATTING !!!)
+# |   |-> create a command reference: e.g: cmd1, cmd2, cmd_hi
+# |   |-> you can name the command references as you want, and add as much as you want
+# |
+# |   |-> add the command to the list from the command reference:
+# |   |-> you can add as many commands to a command reference!
+# |
+# |   |-> Placeholder:
+# |       %player% = the player who executed the command
+# |       %killer% = the killer/attacker
+# |       @primaryLoc@ = the location of the entity/player with the item -> View on GitHub for more information
+# |       @targetLoc@ = the location of the targetLocation -> View on GitHub for more information
+# |       https://github.com/hexle-at/ItemEffects/wiki/EXE_Commands
+# |
+# | forcecommands: true/false
+# |   |-> If the plugin should force the commands from an item to be executed (for example another plugin cancels an event - blockbreak - and the command should be executed anyway)
+# |
+# ------------------------------------------------------------------------------------------------------------------
+version: "1.2.0"
+noperm: "§4You don't have permission!"
+prefix: "§9[§aItemEffects§9] "
+lang: en
+roman-numerals: false
+updater: true
+main-hand: true
+off-hand: true
+armor: true
+resethealthonchest: false
+enable-hidden-effects: true
+enable-mobs: false
+itemeffecter-item: true
+itemeffecter-settings: "choose"
+itemeffecter-armor: true
+updateEffectsOnCommand: true
+infinityOnlyOnActiveSlots: false
+safeEntitySpawn: true
+snowEffectOnBootsOnly: true
+removeSnowAfterSeconds: 15
+spawnSnowGolemOnDeathOnChristmas: false
+CONFUSION: ["nausea","Übelkeit", "nausées", "ТОШНОТА",  "mide_bulantısı"]
+NIGHT_VISION: ["night_vision", "Nachtsicht", "nuit_vision", "НОЧНОЕ_ЗРЕНИЕ", "gece_görüşü"]
+SPEED: ["speed", "Geschwindigkeit", "vitesse", "СКОРОСТЬ", "hız"]
+ABSORPTION: ["absportion", "Absorption", "absorption", "ПОГЛОЩЕНИЕ", "absorpsiyon"]
+UNLUCK: ["bad_luck", "Pech", "malchance", "НЕВЕЗЕНИЕ", "şanssızlık"]
+BAD_OMEN: ["bad_omen", "Böses_Omen", "mauvais_présage", "ДУРНОЕ_ЗНАМЕНИЕ", "kötü_alâmet"]
+BLINDNESS: ["blindness", "Blindheit", "cécité", "СЛЕПОТА", "körlük"]
+CONDUIT_POWER: ["conduit_power", "Meereskraft", "conduit_puissance", "МОРСКАЯ_СИЛА", "kanal gücü"]
+DOLPHINS_GRACE: ["dolphins_grace", "Gunst_des_Delfins", "dolphins_de_grâce", "ГРАЦИЯ_ДЕЛЬФИНА", "yunuslar_zarafet"]
+FIRE_RESISTANCE: ["fire_resistance", "Feuerschutz", "fire_resistance", "ОГНЕСТОЙКОСТЬ", "ateşe_karşı_direnç"]
+GLOWING: ["glowing", "Leuchten", "brillant", "СВЕЧЕНИЕ", "parlayan"]
+FAST_DIGGING: ["haste", "Eile", "hâte", "СПЕШКА", "acele"]
+HEALTH_BOOST: ["health_boost", "Extraenergie", "boost_santé", "ПРИЛИВ_ЗДОРОВЬЯ", "sağlık_boost"]
+HUNGER: ["hunger", "Hunger", "faim", "ГОЛОД", "açlık"]
+HARM: ["instant_damage", "Direktschaden", "instant_dommages", "МОМЕНТАЛЬНЫЙ_УРОН", "anında_hasar"]
+HEAL: ["instant_health", "Direktheilung", "santé_instantanée", "ИСЦЕЛЕНИЕ", "anında_sağlık"]
+HERO_OF_THE_VILLAGE: ["hero_of_the_village", "Held_des_Dorfes", "héros_du_Village", "ГЕРОЙДЕРЕВНИ", "köy_kahramanı"]
+INVISIBILITY: ["invisibility", "Unsichtbarkeit", "invisibilité", "невидимость", "görünmezlik"]
+JUMP: ["jump_boost", "Sprungkraft", "coup_de_pouce", "ПРЫГУЧЕСТЬ", "atlama_kuvvetlendirme"]
+LEVITATION: ["levitation", "Schwebekraft", "lévitation", "ЛЕВИТАЦИЯ", "levitasyon"]
+LUCK: ["luck", "Glück", "chance", "УДАЧА", "şans"]
+SLOW_DIGGING: ["mining_fatigue", "Abbaulähmung", "fatigue_minière", "УСТАЛОСТЬ", "madencilik_yorgunluğu"]
+POISON: ["poison", "Vergiftung", "poison", "ОТРАВЛЕНИЕ", "zehir"]
+REGENERATION: ["regeneration", "Regeneration", "régénération", "РЕГЕНЕРАЦИЯ", "rejenerasyon"]
+DAMAGE_RESISTANCE: ["resistance", "Resistenz", "résistance", "СОПРОТИВЛЕНИЕ", "direnç"]
+SATURATION: ["saturation", "Sättigung", "saturation", "НАСЫЩЕНИЕ", "doygunluk"]
+SLOW_FALLING: ["slow_falling", "Sanfter_Fall", "chute_lente", "МЕДЛЕННОЕ_ПАДЕНИЕ", "yavaş_düşen"]
+SLOW: ["slowness", "Langsamkeit", "lenteur", "МЕДЛИТЕЛЬНОСТЬ", "yavaşlık"]
+INCREASE_DAMAGE: ["strength", "Stärke", "force", "СИЛА", "kuvvet"]
+WATER_BREATHING: ["water_breathing", "Unterwasseratmung", "water_respiration", "ПОДВОДНОЕ_ДЫХАНИЕ", "su_nefesi"]
+WEAKNESS: ["weakness", "Schwäche", "faiblesse", "СЛАБОСТЬ", "zayıflık"]
+WITHER: ["wither", "Ausdörrung", "garrot", "ИССУЩЕНИЕ", "solmak"]
+DARKNESS: ["darkness", "Dunkelheit", "dark_nuit", "ТЬМА", "Karanlık"]
+SOULBOUND: ["soulbound", "Seelengebunden", "lié à l'âme", "душевный", "ruha bağlı"]
+SNOW: ["snow", "Schnee", "neige", "снег", "kar"]
+forcecommands: false
+commandExecutionRateInTicks: 10
+commands:
+  cmd1:
+    - "say THIS FEATURE IS CURRENTLY IN TESTING PHASE"
+    - "say THIS FEATURE IS CURRENTLY IN TESTING PHASE"
+  cmd2:
+    - "say THIS FEATURE IS CURRENTLY IN TESTING PHASE"
+    - "say THIS FEATURE IS CURRENTLY IN TESTING PHASE"
+

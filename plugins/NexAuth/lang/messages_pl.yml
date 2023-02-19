@@ -1,0 +1,90 @@
+# ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ ▄▄▄   ▄ ▄▄▄     ▄▄▄ ▄▄    ▄ ▄▄▄▄▄▄▄ 
+#█  █▄█  █       █       █   █ █ █   █   █   █  █  █ █       █
+#█       █    ▄▄▄█    ▄▄▄█   █▄█ █   █   █   █   █▄█ █    ▄▄▄█
+#█       █   █▄▄▄█   █▄▄▄█      ▄█   █   █   █       █   █▄▄▄ 
+#█       █    ▄▄▄█    ▄▄▄█     █▄█   █▄▄▄█   █  ▄    █    ▄▄▄█
+#█ ██▄██ █   █▄▄▄█   █▄▄▄█    ▄  █       █   █ █ █   █   █▄▄▄ 
+#█▄█   █▄█▄▄▄▄▄▄▄█▄▄▄▄▄▄▄█▄▄▄█ █▄█▄▄▄▄▄▄▄█▄▄▄█▄█  █▄▄█▄▄▄▄▄▄▄█
+#
+# Translated by Male_Czarne
+# Language: Polish
+
+Command:
+  Login:
+    Usage: <hasło>
+    Desc: Zaloguj się na serwer.
+  Register:
+    Usage: <hasło>
+    Desc: Zarejestruj się na serwer.
+  Changepassword:
+    Usage: <stare hasło> <nowe hasło>
+    Desc: Zmień swoje hasło
+  Admin:
+    Changepassword:
+      Usage: <nick> <nowe hasło>
+      Desc: Change user's current password.
+      Done: '&a%player%&7''s password changed.'
+    Unregister:
+      Usage: <user>
+      Desc: Unregister specified player.
+      Done: '&a%player%&7 unregistered.'
+      Kick: '&eYour account has been unregistered.'
+Login:
+  Error:
+    Name:
+      Short: '&eTwój nick jest za krótki! Musi zawierać co najmniej &c%min% &eznaków!'
+      Long: '&eTwój nick jest za długi! Nie móze zawierać więcej niż &c%max% &eznaków!'
+      InvalidChars: '&eTwój nick zawiera niedozwolone znaki...
+        pattern: &c%regex%'
+      InvalidCase: '&eTwój nick jest w złej wielkośći! Poprawka: &c%name%'
+    BadCountry: '&eYour country is banned on this server!'
+    AlreadyLogged: '&eGracz o tym nicku jest już na serwerze.'
+    InvalidPassword: 'Niepoprawne hasło! Pozostałych prób: &c%attempts%'
+  Notify:
+    Logged: Zalogowano!
+    NotLogged: Napisz &e/zaloguj <hasło> &7aby się zalogować...
+Register:
+  Notify:
+    NotRegistered: Napisz &e/zarejestruj <hasło> &7aby się zarejestrować...
+    Registered: 'Zarejestrowano! Twoje hasło to: {json: ~hint:&7Password:
+      &a%password%;}&d[Hover Cursor]{end-json}'
+  Error:
+    Password:
+      Short: '&eTwoje hasło jest za krótkie! Musi zawierać co najmniej &c%min% &eznaków!'
+      Long: '&eTwoje hasło jest za długie! Nie móze zawierać więcej niż &c%max% &eznaków!'
+      InvalidChars: '&eTwoje hasło zawiera niedozwolone znaki! Może zawierać
+        jedynie znaki alfabetu łacińskiego i/lub znaki.'
+      Denied: '&eTwoje hasło jest zbyt proste! Wymyśl inne.'
+    TooManyIps: Zarejestrowano maksymalną liczbę kont pod tym IP.
+Changepassword:
+  Error:
+    WrongOld: Stare hasło jest niepoprawne!
+  Notify:
+    Changed: Hasło zostało zmienione!
+Kick:
+  MaxAttempts: '&cPrzekroczono maksymalną ilość prób zalogowania.'
+  Timeout: '&cPrzekroczono czas logowania!'
+  Reload: '&eNexAuth przeładowany!'
+Titles:
+  Login:
+    Notify:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&e&lZaloguj się'
+    - '&7Wpisz hasło na &eczacie&7.'
+    Success:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&lPoprawne hasło!'
+    - '&7Zalogowano.'
+    Failure:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&lNiepoprawne
+      Hasło!'
+    - '&7Pozostałych prób: &c&n%attempts%'
+  Register:
+    Notify:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&lZarejestruj się'
+    - '&7Wpisz hasło na &cczacie&7.'
+    Success:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&lPoprawnie zarejestrowano!'
+    - '&7Konto zostało zarejestrowane.'
+    Failure:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&lNiepoprawne
+      Hasło!'
+    - '&7Spróbuj ponownie.'

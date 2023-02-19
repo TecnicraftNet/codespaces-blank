@@ -1,0 +1,24 @@
+###############################################################################
+#                             -<( BasicQueue )>-                              #
+#                               Made by muriplz                               #
+#                                                                             #
+###############################################################################
+#                                                                             #
+# Github - https://github.com/muriplz/BasicQueue                              #
+# Spigot - https://www.spigotmc.org/resources/basicqueue.101072/              #
+###############################################################################
+
+# Placeholders:
+# %QUEUEPOS% - Posición en la cola
+# %QUEUESIZE% - tamaño de la cola
+# %QUEUECOOLDOWN% - Cooldown en minutos
+# %ESTIMATION% - Tiempo estimado de espera
+
+# Mesajes de expulsión de la cola:
+default: |-
+  Estás dentro de la cola, tu posición es: &a%QUEUEPOS%&f de %QUEUESIZE%.
+  Reconéctate en menos de %COOLDOWNMINUTES% minutos para conservar tu posición
+added: |-
+  Has sido añadido a la cola, tu posición es: &a%QUEUEPOS%&f de %QUEUESIZE%.
+  Reconéctate en menos de %COOLDOWNMINUTES% minutos para conservar tu posición
+estimation: 'Tiempo estimado de espera: %ESTIMATION%&f minutos'

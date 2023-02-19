@@ -1,0 +1,94 @@
+Plugin:
+  # Localized plugin name. It's used in messages and with internal placeholders.
+  Name: NexAuth
+  # Plugin prefix. Used in messages.
+  # You can use %plugin_name_localized% placeholder for a plugin name.
+  Prefix: '&e%plugin_name% &8» &7'
+  # Command names that will be registered as main plugin commands.
+  # Do not leave this empty. Split multiple names with a comma.
+  Command_Aliases: nexauth,auth
+  # Sets the plugin language.
+  # It will use language config from the '/lang/' sub-folder for specified language code.
+  # By default it's 'en', so 'messages_en.yml' will be used.
+  Language: en
+
+Database:
+  # Defines how often (in minutes) user data of online players will be saved to the database.
+  # Set -1 to disable.
+  Auto_Save_Interval: 20
+  # Defines how often (in seconds) plugin data will be fetched and loaded from the remote database.
+  Sync_Interval: -1
+  # Sets database type.
+  # Available values: MYSQL,SQLITE
+  Type: SQLITE
+  # Table prefix to use when plugin create tables. Do not leave this empty.
+  Table_Prefix: nexauth
+  MySQL:
+    Username: root
+    Password: root
+    Host: localhost
+    Database: minecraft
+  SQLite:
+    # File name for the database file.
+    # Actually it's a path to the file, so you can use directories here.
+    FileName: data.db
+  Purge:
+    # Enables/Disables purge feature.
+    # Purge will remove all records from the plugin tables that are 'old' enough.
+    Enabled: false
+    # Sets maximal 'age' for the database records before they will be purged.
+    # This option may have different behavior depends on the plugin.
+    # By default it's days of inactivity for the plugin users.
+    For_Period: 60
+
+General:
+  Encryption: SHA512
+
+Bungee:
+  Enabled: false
+  Server: Survival
+  Timer: 3
+
+Login:
+  Time: 60
+  Max_Attempts: 5
+  Max_Accounts_Per_IP: 2
+  Notify_Interval: 3
+  Sounds:
+    Enabled: true
+    Invalid_Password: ENTITY_VILLAGER_NO
+    Logged_In: BLOCK_IRON_DOOR_OPEN
+    Registered: ENTITY_PLAYER_LEVELUP
+  Blindness:
+    Enabled: true
+    Override: false
+  Affected_Commands:
+    Allow_Chat: true
+    Login:
+    - l
+    - login
+    Register:
+    - reg
+    - register
+  Session:
+    Enabled: true
+    Timeout: 120
+  Countries:
+    Enabled: false
+    Blacklist:
+      Reverse: false
+      List:
+      - A1
+  Password:
+    Min_Length: 3
+    Max_Length: 16
+    Blacklist:
+    - '12345'
+    - '123'
+    - qwerty
+    Allowed_Chars: '[a-zA-Z0-9_]*'
+  Nick:
+    Check_Case: true
+    Min_Length: 3
+    Max_Length: 20
+    Allowed_Chars: '[a-zA-Z0-9_]*'

@@ -1,0 +1,74 @@
+Command:
+  Login:
+    Usage: <password>
+    Desc: Iniciar sesión en el servidor.
+  Register:
+    Usage: <password>
+    Desc: Registrarse en el servidor.
+  Changepassword:
+    Usage: <old password> <new password>
+    Desc: Cambiar tu contraseña actual
+  Admin:
+    Changepassword:
+      Usage: <user> <new password>
+      Desc: Cambiar la contraseña actual de un usuario.
+      Done: '&7La contraseña de &a%player%&7 ha cambiado.'
+    Unregister:
+      Usage: <user>
+      Desc: Desregistrar al jugador especificado.
+      Done: '&a%player%&7 desregistrado.'
+      Kick: '&eTu cuenta ha sido desregistrada.'
+Login:
+  Error:
+    Name:
+      Short: '&e¡Tu apodo es demasiado corto! ¡Debe contener al menos &c%min% &ecaracteres!'
+      Long: '&e¡Tu apodo es demasiado largo! ¡No debe contener más de &c%max% &ecaracteres!'
+      InvalidChars: '&e¡Tu apodo contiene caracteres inválidos! Debe seguir el patrón: &c%regex%'
+      InvalidCase: '&e¡Tu apodo está mal puesto! Debe ser: &c%name%'
+    BadCountry: '&e¡Tu país está baneado en este servidor!'
+    AlreadyLogged: '&eEl jugador con ese nombre ya está conectado.'
+    InvalidPassword: '¡Contraseña inválida! Intentos restantes: &c%attempts%'
+  Notify:
+    Logged: ¡Inicio de sesión exitoso!
+    NotLogged: Escribe &e/login <contraseña> &7para iniciar sesión...
+Register:
+  Notify:
+    NotRegistered: Escribe &e/register <contraseña> &7para registrarse...
+    Registered: '¡Registro exitoso! To contraseña es: {json: ~hint:&7Contraseña: &a%password%;}&d[Pasar el Mouse]{end-json}'
+  Error:
+    Password:
+      Short: '&e¡Tu contraseña es demasiada corta! ¡Debe contener al menos &c%min% &ecaracteres!'
+      Long: '&e¡Tu contraseña es demasiada larga! ¡No debe contener más de &c%max% &ecaracteres!'
+      InvalidChars: '&e¡Tu contraseña contiene caracteres inválidos! Debe contener sólo letras y/o números latinos.'
+      Denied: '&e¡Tu contraseña es insegura! Por favor, seleccione otra contraseña.'
+    TooManyIps: Has alcanzado el límite de registro para esta IP.
+Changepassword:
+  Error:
+    WrongOld: ¡La antigua contraseña es incorrecta!
+  Notify:
+    Changed: ¡Has cambiado tu contraseña!
+Kick:
+  MaxAttempts: '&cHa alcanzado el límite de intentos de acceso.'
+  Timeout: '&c¡Tiempo de inicio de sesión agotado!'
+  Reload: '&e¡El sistema de autentificación se está recargando!'
+Titles:
+  Login:
+    Notify:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&e&lPor favor, inicie sesión'
+    - '&7Escribe tu contraseña en el &echat&7.'
+    Success:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&l¡Éxito!'
+    - '&7Iniciaste sesión.'
+    Failure:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&l¡Contraseña Incorrecta!'
+    - '&7Intentos restantes: &c&n%attempts%'
+  Register:
+    Notify:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&lPor favor, regístrese'
+    - '&7Escribe tu contraseña en el &cchat&7.'
+    Success:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: 80; ~fadeOut: 10;}&a&l¡Éxito!'
+    - '&7Ahora estás registrado.'
+    Failure:
+    - '{message: ~type: TITLES; ~fadeIn: 10; ~stay: -1; ~fadeOut: 10;}&c&l¡Contraseña inválida!'
+    - '&7Por favor, elija otra contraseña.'

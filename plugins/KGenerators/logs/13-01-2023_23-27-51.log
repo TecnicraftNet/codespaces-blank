@@ -1,0 +1,69 @@
+[13-01-2023 03:04:57] WorldGuard: Registering kgenerators-pick-up flag
+[13-01-2023 03:04:57] WorldGuard: Registering kgenerators-only-gen-break flag
+[13-01-2023 03:06:13] !!! WARNING !!! KGenerators will be loaded in post init check, check for more informations futher in this log
+[13-01-2023 03:07:16] [Debug] Settings: Loading settings
+[13-01-2023 03:07:16] [Debug] Dependencies: Setting up dependencies
+[13-01-2023 03:07:16] Dependencies: Detected Vault economy. Hooked into it.
+[13-01-2023 03:07:16] Dependencies: Detected Vault permissions. Hooked into it.
+[13-01-2023 03:07:16] Dependencies: Detected plugin WorldEdit. Hooking into it.
+[13-01-2023 03:07:16] Dependencies: Detected plugin PlaceholderAPI. Hooking into it.
+[13-01-2023 03:07:16] Dependencies: Detected plugin WorldGuard. Hooked into it.
+[13-01-2023 03:07:16] Dependencies: Detected plugin DecentHolograms. Hooked holograms into it.
+[13-01-2023 03:07:16] [Debug] GeneratorsManager: Setting up manager
+[13-01-2023 03:07:16] [Debug] GeneratedObjectsManager: Loaded GeneratedBlock with type block
+[13-01-2023 03:07:16] [Debug] GeneratedObjectsManager: Loaded GeneratedItem with type item
+[13-01-2023 03:07:16] [Debug] GeneratedObjectsManager: Loaded GeneratedEntity with type entity
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_1 generating variety of 1 objects every 40 ticks
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 100.0 | Material: STONE
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded properly DOUBLE stone_generator_level_2 generating variety of 1 objects every 20 ticks
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{OAK_LOG x 1}
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{BIRCH_LOG x 1}
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{BIRCH_LOG x 1}
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: item | Chance: 25.0 | Item: ItemStack{SPRUCE_LOG x 1}
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded properly SINGLE wood_generator generating variety of 4 objects every 20 ticks
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: STONE
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{COAL x 1} ItemFortune: true
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{RAW_IRON x 1} ItemFortune: true
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 10.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{RAW_GOLD x 1} ItemFortune: true
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{DIAMOND x 1} ItemFortune: true
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: STONE | CustomDrops: RemoveDefaults: true, Item: ItemStack{EMERALD x 1} ItemFortune: true, Commands: [say <player> dropped emerald from Ores from stone generator!]
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded properly SINGLE ores_from_stone_generator generating variety of 6 objects every 80 ticks
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 50.0 | Material: COAL_ORE
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 25.0 | Material: IRON_ORE
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 15.0 | Material: GOLD_ORE
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 9.0 | Material: DIAMOND_ORE
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded GeneratedObject: Type: block | Chance: 1.0 | Material: EMERALD_ORE
+[13-01-2023 03:07:16] [Debug] Generators file: Loaded properly SINGLE ores_generator generating variety of 5 objects every 80 ticks
+[13-01-2023 03:07:16] Generators file: Loaded 5 generators!
+[13-01-2023 03:07:16] [Debug] Lang: Loading lang files
+[13-01-2023 03:07:16] Lang: Messages and Guis file loaded with lang: en
+[13-01-2023 03:07:16] [Debug] RecipesManager: Setting up manager
+[13-01-2023 03:07:16] Recipes file: Recipes are disabled. You can enable them in recipes.yml
+[13-01-2023 03:07:16] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostMoney
+[13-01-2023 03:07:16] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostExp
+[13-01-2023 03:07:16] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostExpLevel
+[13-01-2023 03:07:16] [Debug] Upgrades: Loaded UpgradeCost: UpgradeCostItems
+[13-01-2023 03:07:16] [Debug] UpgradesManager: Setting up manager
+[13-01-2023 03:07:16] Upgrades file: Upgrades are disabled. You can enable them in upgrades.yml
+[13-01-2023 03:07:16] [Debug] LimitsManager: Setting up manager
+[13-01-2023 03:07:16] Limits file: Limits are disabled. You can enable them in limits.yml!
+[13-01-2023 03:07:16] [Debug] DatabaseManager: Setting up manager
+[13-01-2023 03:07:17] Database SQLITE: Connected to SQLITE database
+[13-01-2023 03:07:17] [Debug] HologramsManager: Setting up manager
+[13-01-2023 03:07:17] Holograms: Enabling DecentHologramsProvider
+[13-01-2023 03:07:17] [Debug] SchedulesManager: Setting up manager
+[13-01-2023 03:07:17] [Debug] MenusManager: Setting up manager
+[13-01-2023 03:07:17] [Debug] PlacedGenerators: Loading generators from already loaded chunks
+[13-01-2023 03:07:17] [Debug] MainManager: Loading listeners
+[13-01-2023 03:07:17] [Debug] MainManager: Loading Metrix
+[13-01-2023 03:07:17] MainManager: KGenerators loaded successfully
+[13-01-2023 03:07:17] [Debug] PlacedGenerators: Loaded 0 generators from world world (12 chunks)
+[13-01-2023 03:07:17] [Debug] PlacedGenerators: Loaded 0 generators from world resource_world (0 chunks)
+[13-01-2023 03:07:17] [Debug] PlacedGenerators: Loaded 0 generators from world world_nether (7 chunks)
+[13-01-2023 03:07:17] [Debug] PlacedGenerators: Loaded 0 generators from world world_the_end (52 chunks)
+[13-01-2023 22:37:22] Disabling KGenerators
+[13-01-2023 22:37:22] Saving 0 running generators.
+[13-01-2023 22:37:22] Safely closing menus.
+[13-01-2023 22:37:22] Safely shutting down database.
+[13-01-2023 22:37:22] Database SQLITE: Connection closed

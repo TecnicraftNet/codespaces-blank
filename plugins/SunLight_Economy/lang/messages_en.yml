@@ -1,0 +1,31 @@
+Command:
+  Balance:
+    Usage: '[player]'
+    Done: '&a%player%''s &7balance: &a%balance%'
+  BalanceTop:
+    Usage: '[player]'
+    Header: '{message: ~prefix: false;}&6&m               &6&l[&e&l Balance Top &6&l]&m               &7'
+    Format: '{message: ~prefix: false;}&6%pos%. &e%player%: &c%money%'
+  Eco:
+    Give:
+      Usage: <player> <amount>
+      Desc: Adds specified amount of money to a player's balance.
+      Done: '&7Given &a%amount% &7to &a%player%&7.'
+    Take:
+      Usage: <player> <amount>
+      Desc: Takes specified amount of money from a player's balance.
+      Done: '&7Taken &a%amount% &7from &a%player%&7.'
+    Set:
+      Usage: <player> <amount>
+      Desc: Sets player's balance to specified amount.
+      Done: '&7Set &a%player% &7balance on &a%amount%&7.'
+  Pay:
+    Usage: <player> <amount>
+    Desc: Send money to a player.
+    Done:
+      In: '&7Received &a%amount% &7from &a%player%&7.'
+      Out: '&7Sent &a%amount% &7to &a%player%&7.'
+    Error:
+      InsufficientFunds: '&cYou don''t have enough money!'
+Error:
+  NoAccount: '&cUser account does not exists!'

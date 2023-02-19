@@ -1,0 +1,71 @@
+Title: '&lWelcome to Example Menu'
+Size: 27
+Permission_Required: true
+Command_Aliases:
+- mainmenu
+
+Content:
+  custom-items:
+    Slots: 11
+    Click_Actions: {}
+    Item:
+      Material: AIR
+  
+  conditions:
+    
+    Slots: 13
+    Click_Actions:
+      LEFT:
+        example:
+          Target_Selectors:
+          - '[EXECUTOR] ~name: self;'
+          Conditions:
+            List:
+            - '[PLAYER_VAULT_BALANCE] ~amount: >100; ~target: self;'
+            Fail_Actions: lower100
+          Action_Executors:
+          - '[MESSAGE] ~message: &aYou have more than 100$!; ~target: self;'
+        lower100:
+          Target_Selectors:
+          - '[EXECUTOR] ~name: self;'
+          Conditions:
+            List:
+            - '[PLAYER_VAULT_BALANCE] ~amount: <100; ~target: self;'
+          Action_Executors:
+          - '[MESSAGE] ~message: &cYou have lower than 100$!; ~target: self;'
+    Item:
+      Material: AIR
+  
+  actions-sample:
+    Slots: '15'
+    Click_Actions:
+      LEFT:
+        example:
+          Target_Selectors:
+          - '[EXECUTOR] ~name: self;'
+          Conditions: {}
+          Action_Executors:
+          - '[MESSAGE] ~message: &dLeft Click!; ~target: self;'
+      RIGHT:
+        example:
+          Target_Selectors:
+          - '[EXECUTOR] ~name: self;'
+          Conditions: {}
+          Action_Executors:
+          - '[MESSAGE] ~message: &dRight Click!; ~target: self;'
+      SHIFT_LEFT:
+        example:
+          Target_Selectors:
+          - '[EXECUTOR] ~name: self;'
+          Conditions: {}
+          Action_Executors:
+          - '[MESSAGE] ~message: &dShift-Left Click!; ~target: self;'
+      SHIFT_RIGHT:
+        example:
+          Target_Selectors:
+          - '[EXECUTOR] ~name: self;'
+          Conditions: {}
+          Action_Executors:
+          - '[MESSAGE] ~message: &dShift-Right Click!; ~target: self;'
+    Item:
+      Material: AIR
